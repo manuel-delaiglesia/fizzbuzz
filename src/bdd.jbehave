@@ -1,0 +1,12 @@
+//BDD for JBehave eclipse plugin
+@Story: To develop FizzBuzz
+@Scenario: Execute FizzBuzz for the numbers from 1 to 100
+@Given: An integer number
+@When: Number is divisible by 3
+@Then: Print 'Fizz'
+@When: Number is divisible by 5
+@Then: Print 'Buzz'
+@When: Number is divisible by 3 @And: is divisible by 5 
+@Then: Print 'FizzBuzz'
+@When: not any of the above
+@Then: Print the number
